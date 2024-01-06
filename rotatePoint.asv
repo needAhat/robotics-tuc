@@ -1,0 +1,27 @@
+function output = rotatePoint(axis, angle, pointX, pointY, pointZ)
+%UNTITLED Summary of this function goes here
+%   Detailed explanation goes here
+pointVect
+
+switch axis
+    case x
+        % Code block to execute when variable is 1
+        fprintf('Rotation axis is %s.', axis);
+        rotMatrix = [1 0 0; 0 cos(angle) -sin(angle); 0 sin(angle) cos(angle)]
+
+    case y
+        % Code block to execute when variable is 2
+        fprintf('Rotation axis is %s.', axis);
+        rotMatrix = [1 0 0; 0 cos(angle) -sin(angle); 0 sin(angle) cos(angle)]
+
+    case z
+        % Code block to execute when variable is 3
+        fprintf('Rotation axis is %s.', axis);
+        rotMatrix = [cos(angle) -sin(angle) 0; sin(angle) cos(angle) 0; 0 0 1]
+
+    otherwise
+        % Code block to execute when variable doesn't match any case
+        fprintf('Variable does not match any case. Accepted values: x, y, z');
+
+    output = rotMatrix*
+end
