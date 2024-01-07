@@ -25,5 +25,6 @@ switch axis
         fprintf('Variable does not match any case. Accepted values: x, y, z\n');
 end
 
+fprintf('3X3 Rotation Matrix for %s axis.\n', axis);
 output = rotMatrix;
 end

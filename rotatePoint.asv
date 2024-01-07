@@ -7,6 +7,6 @@ output = [];
 
 rotMatrix = rotationMatrix(axis, angle);
 
-fprintf('Point coordinates in the new system after rotation on %s axis.\n',axis);
+fprintf('Point coordinates in the new system after rotation on %.\n');
 output = rotMatrix * pointVector;
 end
