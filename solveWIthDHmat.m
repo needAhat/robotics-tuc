@@ -1,6 +1,12 @@
 function output = solveWIthDHmat(dhMat)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
+%  DH sceme =
+%   [d1 a1 r1 theta1;
+%    d2 a2 r2 theta2;
+%    d3 a3 r3 theta3]
+
+
 Tmat = [];
 matricesToMultiply = [];
 Imat = eye(4);
